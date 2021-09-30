@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title App
+    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+
+    = stylesheet_link_tag "https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    = stylesheet_link_tag "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css", type: "text/css"
+  %body
+    = yield

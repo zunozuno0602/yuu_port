@@ -1,0 +1,26 @@
+-# 背景画像
+.wrapper__main.fadeOut 
+-# ローディング色付け
+.wrapper__bgimage.fadeUp
+  %ul.header__right 
+    %li.port
+      =link_to "/port", class: "portbtn" do
+        portfolios 
+    %li.ham
+      =link_to "#", class: "hambtn" do
+        =icon('fas', 'cog')
+  %ul.header__left.fadeUp
+    %li.tel
+      TEL : 080-5933-6625
+    %li.mail 
+      MAIL : mizuyuu0602@gmail.com
+    %li.instagram
+      =link_to "https://instagram.com/b.orlov_yuu?utm_medium=copy_link", class: "btn" do
+        =icon('fab', 'instagram')
+        INSTAGRAM
+  .box 
+    .box__myname.fadeUp
+      %h3.name
+        yuu mizuno
+    .text.fadeUp
+      紹介文ここに入ります。

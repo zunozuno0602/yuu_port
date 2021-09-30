@@ -1,0 +1,123 @@
+body {
+  overflow-x: hidden;
+}
+
+li{
+  list-style: none;
+}
+
+// フェードイン
+.fadeUp {
+  animation-name: fadeUpAnime;/*アニメーションの定義名*/
+  animation-duration:1s;/*アニメーション変化時間 ※デフォルト*/
+  animation-fill-mode:forwards;/*アニメーションの開始と終了時の状態を指定*/
+  opacity:0;
+  }
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+  transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
+
+// フェードアウト
+// .fadeOut {
+//   animation-name: fadeOutAnime;/*アニメーションの定義名*/
+//   animation-duration:1s;/*アニメーション変化時間 ※デフォルト*/
+//   animation-fill-mode:forwards;/*アニメーションの開始と終了時の状態を指定*/
+//   opacity:0;
+//   }
+// @keyframes fadeUpAnime{
+//   from {
+//     opacity: 1;
+//   transform: translateY(0px);
+//   }
+
+//   to {
+//     opacity: 0;
+//   transform: translateY(100);
+//   }
+// }
+
+
+// レイアウト
+.wrapper__main{
+  height: 100vh;
+  width: 100vw;
+  background-color: #34243c;
+  position: absolute;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  // opacity: 0;
+  
+}
+
+.wrapper__bgimage{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(sunflower.JPG);
+  background-size: cover;
+  background-position: center;
+  animation-duration: 2.5s;
+  animation-delay: 2.5s;
+  .header__right{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 50px 0 0;
+    padding-top: 10px;
+    font-size: 20px;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    .port{
+      margin-right: 60px;
+    }
+    .ham{
+      margin-right: 10px;
+    }
+  }
+  .header__left{
+    background-color: bisque;
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 50px;
+    font-size: 18px;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    .tel{
+      margin-top: 20px;
+    }
+    .mail{
+      margin-top: 20px;
+    }
+    .instagram{
+      margin-top: 20px;
+    }
+  }
+  .box{
+    height: 625px;
+    background-color: brown;
+    .box__myname{
+      height: 400px;
+      text-align: center;
+      animation-duration: 2s;
+      animation-delay: 2s;
+      .name{
+        padding-top: 180px;
+        font-size: 80px;
+      }
+    }
+    .text{
+      text-align: center;
+      animation-duration: 1.5s;
+      animation-delay: 1.5s;
+    }
+  }
+}

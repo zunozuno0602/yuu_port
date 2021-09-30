@@ -1,0 +1,49 @@
+.wrapper{
+  height: 100vh;
+  width: 100vw;
+  background-color: #34243c;
+  position: absolute;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  // opacity: 0;
+  .header__right{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 50px 0 0;
+    padding-top: 10px;
+  }
+  .main{
+    background-color: burlywood;
+    height: 100vh;
+    .main__left{
+      background-color: cadetblue;
+      float: left;
+      clear: both;
+      height: 100vh;
+      width: calc(100vw - 50%);
+      .ports{
+        height: 100vh;
+        background-color: #349844;
+        margin: 0 200px;
+        display: block;
+        line-height: 250px;
+        text-align: center;
+        .FreeMa{
+          display: block;
+        }
+        .orlov{
+          display: block;
+        }
+        .dusty{
+          display: block;
+        }
+      }
+    }
+    .main__right{
+      background-color: chartreuse;
+      height: 100vh;
+    }
+  }
+}
+
