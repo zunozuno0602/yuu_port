@@ -1,40 +1,48 @@
-.wrapper
-  %ul.header__right 
-    %li.port
-      portfolios 
-    %li.ham
-      =link_to "#", class: "hambtn" do
-        =icon('fas', 'cog')
-  .main 
-    .main__left 
-      %ul.ports
-        %li.FreeMa
-          FreeMa
-        %li.orlov
-          B.orlov fragment official web site
-        %li.dusty
-          dusty mirror web site 
-    .main__right 
-      %ul.detals
-        %li.default
-          %h3.image 
-            -# = image_tag 'src', alt: '', height: '', width: '', class: ''
-          %div.text
-            aaaaaaaa 
-        %li.F__detail
-          %h3.image 
-            -# = image_tag 'src', alt: '', height: '', width: '', class: ''
-          %div.text
-            aaaaaaaa 
-        %li.O__detail
-          %h3.image 
-            -# = image_tag 'src', alt: '', height: '', width: '', class: ''
-          %div.text
-            aaaaaaaa 
-        %li.D__detail
-          %h3.image 
-            -# = image_tag 'src', alt: '', height: '', width: '', class: ''
-          %div.text
-            aaaaaaaa 
-          
+
+.body
+  .wrapper
+    %ul.header__right 
+      %li.port
+        portfolios 
+      %li.ham
+        =link_to "#", class: "hambtn" do
+          =icon('fas', 'cog')
+    .main 
+      .main__left 
+        %ul.tab
+          %li.FreeMa
+            %a(href="#FreeMa")
+              FreeMa
+          %li.orlov
+            %a(href="#orlov")
+              B.orlov fragment official web site
+          %li.dusty
+            %a(href="#dusty")
+              dusty mirror web site 
+      .main__right 
+        %ul.detals
+          -# %li.default.area 
+          -#   %h3.image 
+              -# = image_tag 'src', alt: '', height: '', width: '', class: ''
+            -# %div.text
+            -#   aaaaaaaa 
+          %li#FreeMa.area 
+            %h3.image 
+              -# = image_tag 'src', alt: '', height: '', width: '', class: ''
+            %div.text
+              aaaaaaaaaaaa
+          %li#orlov.area 
+            %h3.image 
+              -# = image_tag 'src', alt: '', height: '', width: '', class: ''
+            %div.text
+              iiiiiiiiiii
+          %li#dusty.area 
+            %h3.image 
+              -# = image_tag 'src', alt: '', height: '', width: '', class: ''
+            %div.text
+              uuuuuuuuuu
+
+%script(src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" )
+%script(scr="port.js")
+  
 
